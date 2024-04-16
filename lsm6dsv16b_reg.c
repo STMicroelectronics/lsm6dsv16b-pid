@@ -1369,7 +1369,7 @@ int32_t lsm6dsv16b_dual_acceleration_raw_get(const stmdev_ctx_t *ctx, int16_t *v
   uint8_t buff[6];
   int32_t ret;
 
-  ret = lsm6dsv16b_read_reg(ctx, LSM6DSV16B_UI_OUTZ_L_A_OIS_DUALC, &buff[0], 6);
+  ret = lsm6dsv16b_read_reg(ctx, LSM6DSV16B_UI_OUTZ_L_A_DUALC, &buff[0], 6);
   val[2] = (int16_t)buff[1];
   val[2] = (val[2] * 256) + (int16_t)buff[0];
   val[1] = (int16_t)buff[3];
@@ -1917,10 +1917,10 @@ int32_t lsm6dsv16b_filt_gy_lp1_bandwidth_get(const stmdev_ctx_t *ctx,
 }
 
 /**
-  * @brief  It enables gyroscope digital LPF1 filter. If the OIS chain is disabled, the bandwidth can be selected through LPF1_G_BW.[set]
+  * @brief  It enables gyroscope digital LPF1 filter.[set]
   *
   * @param  ctx      read / write interface definitions
-  * @param  val      It enables gyroscope digital LPF1 filter. If the OIS chain is disabled, the bandwidth can be selected through LPF1_G_BW.
+  * @param  val      It enables gyroscope digital LPF1 filter.
   * @retval          interface status (MANDATORY: return 0 -> no Error)
   *
   */
@@ -1941,10 +1941,10 @@ int32_t lsm6dsv16b_filt_gy_lp1_set(const stmdev_ctx_t *ctx, uint8_t val)
 }
 
 /**
-  * @brief  It enables gyroscope digital LPF1 filter. If the OIS chain is disabled, the bandwidth can be selected through LPF1_G_BW.[get]
+  * @brief  It enables gyroscope digital LPF1 filter.[get]
   *
   * @param  ctx      read / write interface definitions
-  * @param  val      It enables gyroscope digital LPF1 filter. If the OIS chain is disabled, the bandwidth can be selected through LPF1_G_BW.
+  * @param  val      It enables gyroscope digital LPF1 filter.
   * @retval          interface status (MANDATORY: return 0 -> no Error)
   *
   */
@@ -5302,10 +5302,10 @@ int32_t lsm6dsv16b_fifo_batch_counter_threshold_get(const stmdev_ctx_t *ctx,
 }
 
 /**
-  * @brief  Selects the trigger for the internal counter of batch events between the accelerometer, gyroscope and EIS gyroscope.[set]
+  * @brief  Selects the trigger for the internal counter of batch events between the accelerometer, gyroscope.[set]
   *
   * @param  ctx      read / write interface definitions
-  * @param  val      XL_BATCH_EVENT, GY_BATCH_EVENT, GY_EIS_BATCH_EVENT,
+  * @param  val      XL_BATCH_EVENT, GY_BATCH_EVENT
   * @retval          interface status (MANDATORY: return 0 -> no Error)
   *
   */
@@ -5327,10 +5327,10 @@ int32_t lsm6dsv16b_fifo_batch_cnt_event_set(const stmdev_ctx_t *ctx,
 }
 
 /**
-  * @brief  Selects the trigger for the internal counter of batch events between the accelerometer, gyroscope and EIS gyroscope.[get]
+  * @brief  Selects the trigger for the internal counter of batch events between the accelerometer, gyroscope.[get]
   *
   * @param  ctx      read / write interface definitions
-  * @param  val      XL_BATCH_EVENT, GY_BATCH_EVENT, GY_EIS_BATCH_EVENT,
+  * @param  val      XL_BATCH_EVENT, GY_BATCH_EVENT
   * @retval          interface status (MANDATORY: return 0 -> no Error)
   *
   */
@@ -5349,10 +5349,6 @@ int32_t lsm6dsv16b_fifo_batch_cnt_event_get(const stmdev_ctx_t *ctx,
 
     case LSM6DSV16B_GY_BATCH_EVENT:
       *val = LSM6DSV16B_GY_BATCH_EVENT;
-      break;
-
-    case LSM6DSV16B_GY_EIS_BATCH_EVENT:
-      *val = LSM6DSV16B_GY_EIS_BATCH_EVENT;
       break;
 
     default:
