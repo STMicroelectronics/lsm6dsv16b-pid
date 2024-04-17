@@ -460,7 +460,7 @@ int32_t lsm6dsv16b_xl_data_rate_get(const stmdev_ctx_t *ctx,
   * @brief  Accelerometer operating mode selection.[set]
   *
   * @param  ctx      read / write interface definitions
-  * @param  val      XL_HIGH_PERFORMANCE_MD, XL_HIGH_ACCURANCY_ODR_MD, XL_LOW_POWER_2_AVG_MD, XL_LOW_POWER_4_AVG_MD, XL_LOW_POWER_8_AVG_MD, XL_NORMAL_MD,
+  * @param  val      lsm6dsv16b_xl_mode_t struct
   * @retval          interface status (MANDATORY: return 0 -> no Error)
   *
   */
@@ -484,7 +484,7 @@ int32_t lsm6dsv16b_xl_mode_set(const stmdev_ctx_t *ctx, lsm6dsv16b_xl_mode_t val
   * @brief  Accelerometer operating mode selection.[get]
   *
   * @param  ctx      read / write interface definitions
-  * @param  val      XL_HIGH_PERFORMANCE_MD, XL_HIGH_ACCURANCY_ODR_MD, XL_LOW_POWER_2_AVG_MD, XL_LOW_POWER_4_AVG_MD, XL_LOW_POWER_8_AVG_MD, XL_NORMAL_MD,
+  * @param  val      lsm6dsv16b_xl_mode_t struct
   * @retval          interface status (MANDATORY: return 0 -> no Error)
   *
   */
