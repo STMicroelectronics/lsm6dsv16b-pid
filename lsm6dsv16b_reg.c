@@ -2805,10 +2805,10 @@ int32_t lsm6dsv16b_pin_polarity_get(const stmdev_ctx_t *ctx,
   *
   */
 int32_t lsm6dsv16b_pin_int1_route_set(const stmdev_ctx_t *ctx,
-                                      lsm6dsv16b_pin_int1_route_t val)
+                                      lsm6dsv16b_pin_int_route_t val)
 {
   lsm6dsv16b_functions_enable_t functions_enable;
-  lsm6dsv16b_pin_int2_route_t  pin_int2_route;
+  lsm6dsv16b_pin_int_route_t  pin_int2_route;
   lsm6dsv16b_inactivity_dur_t inactivity_dur;
   lsm6dsv16b_emb_func_int1_t emb_func_int1;
   lsm6dsv16b_pedo_cmd_reg_t pedo_cmd_reg;
@@ -3024,7 +3024,7 @@ int32_t lsm6dsv16b_pin_int1_route_set(const stmdev_ctx_t *ctx,
   *
   */
 int32_t lsm6dsv16b_pin_int1_route_get(const stmdev_ctx_t *ctx,
-                                      lsm6dsv16b_pin_int1_route_t *val)
+                                      lsm6dsv16b_pin_int_route_t *val)
 {
   lsm6dsv16b_inactivity_dur_t inactivity_dur;
   lsm6dsv16b_emb_func_int1_t emb_func_int1;
@@ -3129,10 +3129,10 @@ int32_t lsm6dsv16b_pin_int1_route_get(const stmdev_ctx_t *ctx,
   *
   */
 int32_t lsm6dsv16b_pin_int2_route_set(const stmdev_ctx_t *ctx,
-                                      lsm6dsv16b_pin_int2_route_t val)
+                                      lsm6dsv16b_pin_int_route_t val)
 {
   lsm6dsv16b_functions_enable_t functions_enable;
-  lsm6dsv16b_pin_int1_route_t  pin_int1_route;
+  lsm6dsv16b_pin_int_route_t  pin_int1_route;
   lsm6dsv16b_inactivity_dur_t inactivity_dur;
   lsm6dsv16b_emb_func_int2_t emb_func_int2;
   lsm6dsv16b_pedo_cmd_reg_t pedo_cmd_reg;
@@ -3321,7 +3321,7 @@ int32_t lsm6dsv16b_pin_int2_route_set(const stmdev_ctx_t *ctx,
   *
   */
 int32_t lsm6dsv16b_pin_int2_route_get(const stmdev_ctx_t *ctx,
-                                      lsm6dsv16b_pin_int2_route_t *val)
+                                      lsm6dsv16b_pin_int_route_t *val)
 {
   lsm6dsv16b_inactivity_dur_t inactivity_dur;
   lsm6dsv16b_emb_func_int2_t emb_func_int2;
