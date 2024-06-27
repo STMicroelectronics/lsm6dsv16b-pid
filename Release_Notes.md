@@ -58,7 +58,7 @@ This directory contains the LSM6DSV16B component drivers.
 
 </div>
 
-<input type="checkbox" id="collapse-section3" checked aria-hidden="true">
+<input type="checkbox" id="collapse-section3" aria-hidden="true">
 <label for="collapse-section3" aria-hidden="true">V2.1.0 / 03-May-2024</label>
 <div>
 
@@ -66,6 +66,18 @@ This directory contains the LSM6DSV16B component drivers.
 
 - Fix BDR counter regsters get/set APIs
 - pin_int1_route and pin_int2_route struct
+
+##
+
+</div>
+
+<input type="checkbox" id="collapse-section4" checked aria-hidden="true">
+<label for="collapse-section4" aria-hidden="true">V3.0.0 / 03-Jun-2024</label>
+<div>
+
+## Main changes
+
+- Add defs for num_phy routines
 
 ##
 
