@@ -71,13 +71,25 @@ This directory contains the LSM6DSV16B component drivers.
 
 </div>
 
-<input type="checkbox" id="collapse-section4" checked aria-hidden="true">
+<input type="checkbox" id="collapse-section4" aria-hidden="true">
 <label for="collapse-section4" aria-hidden="true">V3.0.0 / 03-Jun-2024</label>
 <div>
 
 ## Main changes
 
 - Add defs for num_phy routines
+
+##
+
+</div>
+
+<input type="checkbox" id="collapse-section5" checked aria-hidden="true">
+<label for="collapse-section5" aria-hidden="true">V3.0.1 / 07-Apr-2025</label>
+<div>
+
+## Main changes
+
+- Fixed TAP event related code
 
 ##
 
