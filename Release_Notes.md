@@ -30,15 +30,63 @@ This directory contains the LSM6DSV16B component drivers.
 # Update history
 
 ::: {.collapse}
-<input type="checkbox" id="collapse-section1" aria-hidden="true">
-<label for="collapse-section1" aria-hidden="true">V1.0.0 / 28-Mar-2024</label>
+<input type="checkbox" id="collapse-section7" checked aria-hidden="true">
+<label for="collapse-section7" aria-hidden="true">V3.2.0 / 07-Oct-2025</label>
 <div>
 
 ## Main changes
 
-### First release
+- Added checks before writes and membank setting
+- Adding CODE_OF_CONDUCT.md and SECURITY.md
 
-- First official release [ref. DS v1.0]
+##
+
+</div>
+<input type="checkbox" id="collapse-section6" aria-hidden="true">
+<label for="collapse-section6" aria-hidden="true">V3.1.0 / 07-Jul-2025</label>
+<div>
+
+## Main changes
+
+- Fix driver formatting options
+- Added pointer to private data in stmdev_ctx_t
+
+##
+
+</div>
+
+<input type="checkbox" id="collapse-section5" aria-hidden="true">
+<label for="collapse-section5" aria-hidden="true">V3.0.1 / 07-Apr-2025</label>
+<div>
+
+## Main changes
+
+- Fixed TAP event related code
+
+##
+
+</div>
+
+<input type="checkbox" id="collapse-section4" aria-hidden="true">
+<label for="collapse-section4" aria-hidden="true">V3.0.0 / 03-Jun-2024</label>
+<div>
+
+## Main changes
+
+- Add defs for num_phy routines
+
+##
+
+</div>
+
+<input type="checkbox" id="collapse-section3" aria-hidden="true">
+<label for="collapse-section3" aria-hidden="true">V2.1.0 / 03-May-2024</label>
+<div>
+
+## Main changes
+
+- Fix BDR counter regsters get/set APIs
+- pin_int1_route and pin_int2_route struct
 
 ##
 
@@ -58,68 +106,20 @@ This directory contains the LSM6DSV16B component drivers.
 
 </div>
 
-<input type="checkbox" id="collapse-section3" aria-hidden="true">
-<label for="collapse-section3" aria-hidden="true">V2.1.0 / 03-May-2024</label>
+<input type="checkbox" id="collapse-section1" aria-hidden="true">
+<label for="collapse-section1" aria-hidden="true">V1.0.0 / 28-Mar-2024</label>
 <div>
 
 ## Main changes
 
-- Fix BDR counter regsters get/set APIs
-- pin_int1_route and pin_int2_route struct
+### First release
+
+- First official release [ref. DS v1.0]
 
 ##
 
 </div>
 
-<input type="checkbox" id="collapse-section4" aria-hidden="true">
-<label for="collapse-section4" aria-hidden="true">V3.0.0 / 03-Jun-2024</label>
-<div>
-
-## Main changes
-
-- Add defs for num_phy routines
-
-##
-
-</div>
-
-<input type="checkbox" id="collapse-section5" aria-hidden="true">
-<label for="collapse-section5" aria-hidden="true">V3.0.1 / 07-Apr-2025</label>
-<div>
-
-## Main changes
-
-- Fixed TAP event related code
-
-##
-
-</div>
-
-<input type="checkbox" id="collapse-section6" aria-hidden="true">
-<label for="collapse-section6" aria-hidden="true">V3.1.0 / 07-Jul-2025</label>
-<div>
-
-## Main changes
-
-- Fix driver formatting options
-- Added pointer to private data in stmdev_ctx_t
-
-##
-
-</div>
-
-<input type="checkbox" id="collapse-section7" checked aria-hidden="true">
-<label for="collapse-section7" aria-hidden="true">V3.2.0 / 07-Oct-2025</label>
-<div>
-
-## Main changes
-
-- Added checks before writes and membank setting
-- Adding CODE_OF_CONDUCT.md and SECURITY.md
-
-##
-
-</div>
 :::
 
 
